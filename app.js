@@ -173,7 +173,7 @@ var SlackChannelHistoryLogger = (function () {
         }
     };
     SlackChannelHistoryLogger.prototype.formatDate = function (dt) {
-        return Utilities.formatDate(dt, Session.getScriptTimeZone(), 'yyyy-MM');
+        return Utilities.formatDate(dt, Session.getScriptTimeZone(), 'yyyy-MM-yy');
     };
     SlackChannelHistoryLogger.prototype.loadMessagesBulk = function (ch, options) {
         var _this = this;
